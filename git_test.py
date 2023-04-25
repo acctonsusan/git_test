@@ -6,7 +6,7 @@ commitText = input('請填寫備註：')
 # git push
 def create_git_push():
   command_arr = [
-    'git pull origin master', # 从远程获取代码并合并本地的版本
+    'git pull origin main', # 从远程获取代码并合并本地的版本
     'git add .', # 添加目录到缓存区
     f'git commit -m {commitText}', # 将暂存区内容添加到仓库中
     #'git push -u origin "master"' # push到远程仓库
