@@ -11,7 +11,7 @@ def create_git_push():
     f'git commit -m {commitText}', # 将暂存区内容添加到仓库中
     #'git push -u origin "master"' # push到远程仓库
     'git remote add origin https://github.com/acctonsusan/git_test.git'
-    'git push -u origin "master"'
+    'git push  origin <master> -u'
   ]
   for command in command_arr:
     system(command)
