@@ -9,7 +9,9 @@ def create_git_push():
     'git pull origin master', # 从远程获取代码并合并本地的版本
     'git add .', # 添加目录到缓存区
     f'git commit -m {commitText}', # 将暂存区内容添加到仓库中
-    'git push -u origin "master"' # push到远程仓库
+    #'git push -u origin "master"' # push到远程仓库
+    'git remote add origin https://github.com/acctonsusan/git_test.git'
+    'git push -u origin "main"'
   ]
   for command in command_arr:
     system(command)
